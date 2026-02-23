@@ -59,10 +59,9 @@ def main():
 
         distance = calculate_path_distance(graph, path)
 
-        print("\nRoute found!")
+        print("\nRoute found")
         print("Number of nodes:", len(path))
         print("Total distance (km):", round(distance / 1000, 2))
-        print("Execution Time:", round(end_time - start_time, 4), "seconds")
 
         from visualization import draw_route_map
         draw_route_map(graph, path, start_coord, end_coord)
